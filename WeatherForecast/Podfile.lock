@@ -1,12 +1,24 @@
 PODS:
   - GoogleMaps (1.13.2)
+  - PKHUD (4.0.0)
 
 DEPENDENCIES:
   - GoogleMaps
+  - PKHUD (from `https://github.com/pkluz/PKHUD.git`)
+
+EXTERNAL SOURCES:
+  PKHUD:
+    :git: https://github.com/pkluz/PKHUD.git
+
+CHECKOUT OPTIONS:
+  PKHUD:
+    :commit: 43e3ad3805061398176571b22a5748f34bfe66d0
+    :git: https://github.com/pkluz/PKHUD.git
 
 SPEC CHECKSUMS:
   GoogleMaps: b20a103ff307f58392e603cf142e59d7e30374c1
+  PKHUD: 37f2068bf166d5425b47771392852c8a1149c7ee
 
-PODFILE CHECKSUM: 85acc2e5ae043a60d16310935cf7efc8079b39a6
+PODFILE CHECKSUM: 9c26ce9f671c58f85254cba68b4ce452a352752e
 
 COCOAPODS: 1.1.1
