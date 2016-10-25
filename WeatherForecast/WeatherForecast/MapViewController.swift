@@ -28,7 +28,8 @@ class MapViewController: UIViewController, GMSMapViewDelegate {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "pushList" {
             if selectedMarker != nil {
-                
+                let nextViewController = segue.destination as! CitiesTableViewController
+                nextViewController.coordinate = self.selectedMarker?.position
             }else{
                 let alertController = UIAlertController(title: "Hey!", message: "Tap on the map to see the forecast of the region", preferredStyle: .alert)
                 
